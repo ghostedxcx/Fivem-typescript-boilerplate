@@ -1,6 +1,5 @@
-function main() {
-  PlayerPedId();
-  console.log("Hello World!");
-}
+on("msg", () => {
+  console.log("working");
+})
 
-main();
+emit("msg");

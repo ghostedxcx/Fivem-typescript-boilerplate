@@ -7,7 +7,7 @@ function randomFileId(number) {
 
 const bundle_ent = [
   {
-    target: "node16",
+    target: "node14",
     entryPoints: ["./src/server/main.ts"],
     platform: "node",
     outfile: `./build/server/sv_${randomFileId(4000)}.js`,
