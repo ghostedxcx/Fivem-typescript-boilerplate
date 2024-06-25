@@ -3,7 +3,6 @@
     "target": "es2015",
     "module": "commonjs",
     "esModuleInterop": true,
-    "outDir": "./build",
     "forceConsistentCasingInFileNames": true,
     "rootDirs": [
       "src/client",

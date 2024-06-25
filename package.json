@@ -4,12 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "node ./builder/build.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "Ghxsted",
   "license": "ISC",
   "devDependencies": {
-    "typescript": "^5.5.2"
+    "jsmin": "^1.0.1"
   }
 }
