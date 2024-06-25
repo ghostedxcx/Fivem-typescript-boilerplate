@@ -1,3 +1,4 @@
+const { execSync } = require('child_process');
 const esBundle = require('esbuild');
 
 
@@ -7,7 +8,7 @@ function randomFileId(number) {
 
 const bundle_ent = [
   {
-    target: "node14",
+    target: "node16",
     entryPoints: ["./src/server/main.ts"],
     platform: "node",
     outfile: `./build/server/sv_${randomFileId(4000)}.js`,
@@ -18,6 +19,7 @@ const bundle_ent = [
     outfile: `./build/client/cl_${randomFileId(2000)}.js`,
   },
 ];
+
 
 const bundle = async () => {
   try {
@@ -46,5 +48,7 @@ const bundle = async () => {
     process.exit(1);
   }
 };
+
+
 
 bundle().catch(() => process.exit(1));
