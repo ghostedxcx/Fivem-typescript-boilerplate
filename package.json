@@ -6,7 +6,7 @@
   "scripts": {
     "rimraf": "./node_modules/rimraf/bin.js",
     "clean": "rimraf build/",
-    "build": "npm run clean && node ./builder/build.js"
+    "build": "npm run clean && node ./Bundler/bundle.js"
   },
   "keywords": [],
   "author": "Ghxsted",
@@ -17,6 +17,9 @@
   "dependencies": {
     "@citizenfx/client": "^2.0.8668-1",
     "@citizenfx/server": "^2.0.8668-1",
-    "rimraf": "^5.0.7"
+    "@types/node": "^20.14.8",
+    "esbuild": "^0.21.5",
+    "rimraf": "^5.0.7",
+    "typescript": "^5.5.2"
   }
 }
