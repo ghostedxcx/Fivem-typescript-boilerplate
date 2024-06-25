@@ -4,12 +4,19 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "node ./builder/build.js"
+    "rimraf": "./node_modules/rimraf/bin.js",
+    "clean": "rimraf build/",
+    "build": "npm run clean && node ./builder/build.js"
   },
   "keywords": [],
   "author": "Ghxsted",
   "license": "ISC",
   "devDependencies": {
     "jsmin": "^1.0.1"
+  },
+  "dependencies": {
+    "@citizenfx/client": "^2.0.8668-1",
+    "@citizenfx/server": "^2.0.8668-1",
+    "rimraf": "^5.0.7"
   }
 }
