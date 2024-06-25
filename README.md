@@ -1,1 +1,0 @@
-# Fivem-typescript-boilerplate
